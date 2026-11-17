@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.smile"
+name = "Smile"
+kind = "filter"
+category = "Portrait"
+order = 84
+intensity = "tone"
+description = "A smile in soft light: warm, clear, kind — the face that makes a day better."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 65
+step = 1
+unit = "%"
+
+[[param]]
+key = "warm"
+label = "Warm"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

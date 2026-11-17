@@ -1,0 +1,13 @@
+format = 2
+
+[effect]
+id = "concat.checkerboard"
+name = "Checkerboard"
+kind = "transition"
+category = "Wipe"
+order = 17
+description = "Squares flip to the incoming shot in diagonal order, from the top left corner to the bottom right."
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.zoom-in-fade"
+name = "Zoom In Fade"
+kind = "transition"
+category = "Zoom"
+order = 23
+description = "The camera zooms in and fades into the new shot."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

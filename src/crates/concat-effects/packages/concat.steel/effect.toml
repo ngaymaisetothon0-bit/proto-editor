@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.steel"
+name = "Steel"
+kind = "filter"
+category = "Black & White"
+order = 97
+intensity = "tone"
+description = "Steel, cold and hard: black and white, sharp and clean, like a blade."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[[param]]
+key = "blade"
+label = "Blade"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

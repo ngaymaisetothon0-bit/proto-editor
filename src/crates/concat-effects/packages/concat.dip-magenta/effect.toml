@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.dip-magenta"
+name = "Dip to Magenta"
+kind = "transition"
+category = "Basic"
+order = 20
+description = "The cut dips through magenta, like a vivid flash of pink-purple."
+
+[[param]]
+key = "strength"
+label = "Strength"
+min = 0
+max = 100
+default = 80
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

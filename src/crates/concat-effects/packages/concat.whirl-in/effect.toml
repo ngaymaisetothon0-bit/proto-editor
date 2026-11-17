@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.whirl-in"
+name = "Whirl In"
+kind = "effect"
+category = "Motion"
+order = 72
+description = "The clip whirls in, spinning two full turns while it grows from half size, over the first half-second."
+
+[[param]]
+key = "duration"
+label = "Duration"
+min = 0.1
+max = 2.0
+default = 0.5
+step = 0.1
+unit = "s"
+
+[wgsl]
+entry = "effect.wgsl"

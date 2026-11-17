@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.honey"
+name = "Honey"
+kind = "filter"
+category = "Portrait"
+order = 75
+intensity = "tone"
+description = "Honey light on skin: warm midtones, lifted blacks, soft contrast."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 65
+step = 1
+unit = "%"
+
+[[param]]
+key = "glow"
+label = "Glow"
+min = 0
+max = 100
+default = 50
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

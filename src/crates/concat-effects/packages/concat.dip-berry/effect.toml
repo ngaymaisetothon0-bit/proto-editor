@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.dip-berry"
+name = "Dip to Berry"
+kind = "transition"
+category = "Basic"
+order = 28
+description = "The cut dips through berry, like a deep flash of purple-red."
+
+[[param]]
+key = "strength"
+label = "Strength"
+min = 0
+max = 100
+default = 80
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

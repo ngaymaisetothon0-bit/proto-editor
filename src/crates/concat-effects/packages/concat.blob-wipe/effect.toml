@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.blob-wipe"
+name = "Blob Wipe"
+kind = "transition"
+category = "Wipe"
+order = 36
+description = "A blob edge expands from the centre as the new shot takes over."
+
+[[param]]
+key = "soft"
+label = "Soft"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

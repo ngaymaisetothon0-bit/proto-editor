@@ -1,0 +1,14 @@
+format = 2
+
+[effect]
+id = "concat.circle-open"
+name = "Circle"
+kind = "transition"
+category = "Wipe"
+order = 18
+description = "A circle opens from the middle of the frame to reveal the incoming shot."
+
+[transition]
+entry = "effect.wgsl"
+xfade = "circleopen"
+fallback = "cross-fade"

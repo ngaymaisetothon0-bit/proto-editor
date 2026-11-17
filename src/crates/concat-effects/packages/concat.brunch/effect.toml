@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.brunch"
+name = "Brunch"
+kind = "filter"
+category = "Everyday"
+order = 24
+intensity = "tone"
+description = "A lazy brunch morning: bright, warm, cheerful — sunlight on the table and nothing to rush for."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 65
+step = 1
+unit = "%"
+
+[[param]]
+key = "sunny"
+label = "Sunny"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

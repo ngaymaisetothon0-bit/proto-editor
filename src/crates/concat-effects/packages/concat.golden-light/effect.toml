@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.golden-light"
+name = "Golden Light"
+kind = "filter"
+category = "Light"
+order = 93
+intensity = "tone"
+description = "Golden light at dusk: warm, bright, rich — the hour before night."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 65
+step = 1
+unit = "%"
+
+[[param]]
+key = "dusk"
+label = "Dusk"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

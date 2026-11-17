@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.torch"
+name = "Torch"
+kind = "filter"
+category = "Light"
+order = 83
+intensity = "tone"
+description = "A torch in the dark: warm flame, steady light, guiding the way."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 65
+step = 1
+unit = "%"
+
+[[param]]
+key = "flame"
+label = "Flame"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

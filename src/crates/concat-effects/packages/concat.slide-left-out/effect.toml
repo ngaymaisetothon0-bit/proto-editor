@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.slide-left-out"
+name = "Slide Left Out"
+kind = "transition"
+category = "Slide"
+order = 20
+description = "The old shot slides off to the left, the new one underneath."
+
+[[param]]
+key = "distance"
+label = "Distance"
+min = 50
+max = 150
+default = 100
+step = 5
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

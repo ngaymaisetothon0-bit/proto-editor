@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.blink"
+name = "Blink"
+kind = "transition"
+category = "Basic"
+order = 5
+description = "A quick blink to black at the cut, like a camera shutter closing and opening."
+
+[[param]]
+key = "dark"
+label = "Dark"
+min = 0
+max = 100
+default = 80
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

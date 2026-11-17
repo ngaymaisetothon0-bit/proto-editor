@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.chroma"
+name = "Chroma"
+kind = "filter"
+category = "Color"
+order = 35
+intensity = "tone"
+description = "Colour turned all the way up: rich, saturated, every hue singing a little louder."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[[param]]
+key = "punch"
+label = "Punch"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

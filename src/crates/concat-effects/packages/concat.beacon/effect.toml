@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.beacon"
+name = "Beacon"
+kind = "filter"
+category = "Light"
+order = 82
+intensity = "tone"
+description = "A beacon in the night: one steady light, warm and far, guiding the way home."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 65
+step = 1
+unit = "%"
+
+[[param]]
+key = "steady"
+label = "Steady"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.melt"
+name = "Melt"
+kind = "transition"
+category = "Dissolve"
+order = 12
+description = "The old shot melts away drip by drip, the new one underneath."
+
+[[param]]
+key = "size"
+label = "Size"
+min = 0
+max = 100
+default = 50
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

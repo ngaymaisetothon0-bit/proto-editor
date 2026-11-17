@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.blush"
+name = "Blush"
+kind = "filter"
+category = "Portrait"
+order = 79
+intensity = "tone"
+description = "A soft blush on the cheeks: gentle pink warmth, flattering and kind."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 65
+step = 1
+unit = "%"
+
+[[param]]
+key = "rose"
+label = "Rose"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

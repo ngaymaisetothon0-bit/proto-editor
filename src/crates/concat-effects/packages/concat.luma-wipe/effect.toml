@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.luma-wipe"
+name = "Luma Wipe"
+kind = "transition"
+category = "Dissolve"
+order = 5
+description = "The next shot burns through the bright parts first, the edge glowing as it spreads."
+
+[[param]]
+key = "feather"
+label = "Feather"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

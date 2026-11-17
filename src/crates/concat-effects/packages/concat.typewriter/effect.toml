@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.typewriter"
+name = "Typewriter"
+kind = "effect"
+category = "Motion"
+order = 13
+description = "The title types itself in one word at a time, each word fading up as its turn comes."
+
+[[param]]
+key = "duration"
+label = "Duration"
+min = 0.1
+max = 3.0
+default = 1.0
+step = 0.1
+unit = "s"
+
+[wgsl]
+entry = "effect.wgsl"

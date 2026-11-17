@@ -1,0 +1,33 @@
+struct Params { duration: f32 }
+
+// Rotate a point around the picture centre by `angle` radians.
+fn spin_coord(uv: vec2<f32>, angle: f32) -> vec2<f32> {
+    let ca = cos(angle);
+    let sa = sin(angle);
+    let d = uv - vec2<f32>(0.5);
+    return vec2<f32>(d.x * ca - d.y * sa, d.x * sa + d.y * ca) + vec2<f32>(0.5);
+}
+// The whole title makes one full 360-degree turn while sharpening out of a soft blur over the first half-second.
+fn effect(uv: vec2<f32>) -> vec4<f32> {
+    let p = clamp(frame.clip_time / max(params.duration, 0.001), 0.0, 1.0);
+    // At p = 1 the angle is 0 - the full turn is spent - so the
+    // rotation is the identity and the title sits at its rest
+    // orientation.
+    let angle = -(1.0 - p) * 6.2831853;
+    let coord = spin_coord(uv, angle);
+    if (coord.x < 0.0 || coord.x > 1.0 || coord.y < 0.0 || coord.y > 1.0) {
+        return vec4<f32>(0.0);
+    }
+    // The same 3x3 box blur text-blur-in uses: at full progress the
+    // radius is 0, so all nine taps read the same pixel and the
+    // picture is exactly sharp.
+    let r = texel() * (1.0 - p) * 8.0;
+    var sum = vec4<f32>(0.0);
+    for (var y: i32 = -1; y <= 1; y++) {
+        for (var x: i32 = -1; x <= 1; x++) {
+            sum += sample(coord + vec2<f32>(f32(x), f32(y)) * r);
+        }
+    }
+    let c = sum / 9.0;
+    return vec4<f32>(c.rgb * p, c.a * p);
+}

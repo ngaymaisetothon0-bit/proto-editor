@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.sepia"
+name = "Sepia"
+kind = "filter"
+category = "Retro"
+order = 48
+intensity = "tone"
+description = "An aged print: warm brown tones over a faded photograph, darker in the shadows."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[[param]]
+key = "contrast"
+label = "Contrast"
+min = 0
+max = 100
+default = 25
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

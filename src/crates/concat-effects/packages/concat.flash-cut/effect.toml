@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.flash-cut"
+name = "Flash Cut"
+kind = "transition"
+category = "Basic"
+order = 7
+description = "A sharp white flash fires exactly at the cut, then the new shot lands."
+
+[[param]]
+key = "strength"
+label = "Strength"
+min = 0
+max = 100
+default = 80
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

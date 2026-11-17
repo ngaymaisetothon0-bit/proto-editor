@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.wave-blur-in"
+name = "Wave Blur In"
+kind = "effect"
+category = "Motion"
+order = 193
+description = "The clip waves in through a blur, rippling as it sharpens over the first half-second."
+
+[[param]]
+key = "duration"
+label = "Duration"
+min = 0.1
+max = 2.0
+default = 0.5
+step = 0.1
+unit = "s"
+
+[wgsl]
+entry = "effect.wgsl"

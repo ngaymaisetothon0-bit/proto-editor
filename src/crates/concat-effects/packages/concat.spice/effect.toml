@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.spice"
+name = "Spice"
+kind = "filter"
+category = "Food"
+order = 77
+intensity = "tone"
+description = "Rich and spicy: deep reds and warm oranges that make food look irresistible."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[[param]]
+key = "heat"
+label = "Heat"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

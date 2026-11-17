@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.spiral-wipe"
+name = "Spiral Wipe"
+kind = "transition"
+category = "Wipe"
+order = 25
+description = "A spiral edge winds around the centre as the new shot takes over."
+
+[[param]]
+key = "soft"
+label = "Soft"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"
