@@ -1,0 +1,22 @@
+# At the clip's first frame the picture is a whole frame below where it
+# belongs, so the middle pixel shows nothing at all.
+#
+# Colours in the working space: linear light, 1.0 the white of an SDR
+# picture.
+
+[[probe]]
+name = "default, off-screen at the first frame"
+input = [0.8, 0.5, 0.3, 1]
+expect = [0, 0, 0, 0]
+
+[[probe]]
+name = "shortest duration, still off-screen at the first frame"
+at = "min"
+input = [0.8, 0.5, 0.3, 1]
+expect = [0, 0, 0, 0]
+
+[[probe]]
+name = "longest duration, still off-screen at the first frame"
+at = "max"
+input = [0.8, 0.5, 0.3, 1]
+expect = [0, 0, 0, 0]

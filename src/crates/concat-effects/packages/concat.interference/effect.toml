@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.interference"
+name = "Interference"
+kind = "transition"
+category = "Glitch"
+order = 16
+description = "Rolling interference bands chew the picture, then the new shot locks in."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

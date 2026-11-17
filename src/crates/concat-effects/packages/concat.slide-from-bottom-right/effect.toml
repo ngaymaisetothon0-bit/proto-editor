@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.slide-from-bottom-right"
+name = "Slide From Bottom Right"
+kind = "transition"
+category = "Slide"
+order = 33
+description = "The new shot slides in from the bottom-right corner."
+
+[[param]]
+key = "distance"
+label = "Distance"
+min = 50
+max = 150
+default = 100
+step = 5
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

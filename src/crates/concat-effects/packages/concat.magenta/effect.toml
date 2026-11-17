@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.magenta"
+name = "Magenta"
+kind = "filter"
+category = "Color"
+order = 39
+intensity = "tone"
+description = "Bold magenta colour: vivid pink-purple energy, loud and proud."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[[param]]
+key = "vivid"
+label = "Vivid"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

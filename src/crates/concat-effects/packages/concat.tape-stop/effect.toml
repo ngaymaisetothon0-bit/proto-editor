@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.tape-stop"
+name = "Tape Stop"
+kind = "transition"
+category = "Glitch"
+order = 11
+description = "The old shot sags like a stopping tape, channels splitting, then the cut snaps."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

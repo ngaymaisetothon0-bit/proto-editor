@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.dip-mustard"
+name = "Dip to Mustard"
+kind = "transition"
+category = "Basic"
+order = 31
+description = "The cut dips through mustard, like a warm flash of yellow."
+
+[[param]]
+key = "strength"
+label = "Strength"
+min = 0
+max = 100
+default = 80
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

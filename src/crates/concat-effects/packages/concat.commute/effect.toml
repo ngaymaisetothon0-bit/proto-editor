@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.commute"
+name = "Commute"
+kind = "filter"
+category = "Everyday"
+order = 27
+intensity = "tone"
+description = "The morning commute: grey streets, clear air, the city waking up."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 65
+step = 1
+unit = "%"
+
+[[param]]
+key = "rush"
+label = "Rush"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.slide-off"
+name = "Slide Off"
+kind = "transition"
+category = "Slide"
+order = 14
+description = "The old shot slides off to the left, revealing the new one underneath."
+
+[[param]]
+key = "distance"
+label = "Distance"
+min = 50
+max = 150
+default = 100
+step = 5
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

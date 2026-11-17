@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.word-spin-in"
+name = "Word Spin In"
+kind = "effect"
+category = "Motion"
+order = 186
+description = "Each word rotates in from -90 degrees, one after another."
+
+[[param]]
+key = "duration"
+label = "Duration"
+min = 0.1
+max = 3.0
+default = 1.0
+step = 0.1
+unit = "s"
+
+[wgsl]
+entry = "effect.wgsl"

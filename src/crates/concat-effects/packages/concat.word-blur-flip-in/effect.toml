@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.word-blur-flip-in"
+name = "Word Blur Flip In"
+kind = "effect"
+category = "Motion"
+order = 339
+description = "Each word flips into place like a card turning around its flat axis, while sharpening out of a soft blur, one after another."
+
+[[param]]
+key = "duration"
+label = "Duration"
+min = 0.1
+max = 3.0
+default = 1.0
+step = 0.1
+unit = "s"
+
+[wgsl]
+entry = "effect.wgsl"

@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.confetti-dissolve"
+name = "Confetti Dissolve"
+kind = "transition"
+category = "Dissolve"
+order = 14
+description = "The old shot bursts into gold confetti, the new one underneath."
+
+[[param]]
+key = "size"
+label = "Size"
+min = 0
+max = 100
+default = 50
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

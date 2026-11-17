@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.dip-plum"
+name = "Dip to Plum"
+kind = "transition"
+category = "Basic"
+order = 29
+description = "The cut dips through plum, like a deep flash of purple."
+
+[[param]]
+key = "strength"
+label = "Strength"
+min = 0
+max = 100
+default = 80
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

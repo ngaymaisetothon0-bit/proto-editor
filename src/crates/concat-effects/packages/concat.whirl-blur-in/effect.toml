@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.whirl-blur-in"
+name = "Whirl Blur In"
+kind = "effect"
+category = "Motion"
+order = 248
+description = "The clip whirls in through a blur, spinning twice as it sharpens over the first half-second."
+
+[[param]]
+key = "duration"
+label = "Duration"
+min = 0.1
+max = 2.0
+default = 0.5
+step = 0.1
+unit = "s"
+
+[wgsl]
+entry = "effect.wgsl"

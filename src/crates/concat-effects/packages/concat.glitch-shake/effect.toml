@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.glitch-shake"
+name = "Glitch Shake"
+kind = "transition"
+category = "Glitch"
+order = 15
+description = "The picture shakes apart and the cut stutters, then locks in."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

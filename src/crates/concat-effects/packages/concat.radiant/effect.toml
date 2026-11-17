@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.radiant"
+name = "Radiant"
+kind = "filter"
+category = "Light"
+order = 88
+intensity = "tone"
+description = "Radiant light: bright, warm, glowing — light that shines out."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 65
+step = 1
+unit = "%"
+
+[[param]]
+key = "shine"
+label = "Shine"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

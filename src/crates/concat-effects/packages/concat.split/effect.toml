@@ -1,0 +1,14 @@
+format = 2
+
+[effect]
+id = "concat.split"
+name = "Split"
+kind = "transition"
+category = "Slide"
+order = 6
+description = "The outgoing shot splits into top and bottom halves that slide apart, the incoming shot showing through the gap between them."
+
+[transition]
+entry = "effect.wgsl"
+xfade = "vertopen"
+fallback = "cross-fade"

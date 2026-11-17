@@ -1,0 +1,4 @@
+. D:\Apps\ConcatBuildTools\enter-build-env.ps1
+Set-Location C:\Users\tuico\source\concat-effects-ui\src
+cargo test -p concat --lib auto_grade 2>&1
+Write-Host 'AUTOGRADE-TEST-DONE'

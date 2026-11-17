@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.vhs-glitch"
+name = "VHS Glitch"
+kind = "transition"
+category = "Glitch"
+order = 18
+description = "VHS tracking trouble at the cut: banded jitter, split channels, a white tracking line."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

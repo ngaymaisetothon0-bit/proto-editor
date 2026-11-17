@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.muted"
+name = "Muted"
+kind = "filter"
+category = "Color"
+order = 34
+intensity = "tone"
+description = "Quiet and editorial: soft desaturated tones, gentle contrast, nothing shouting."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 65
+step = 1
+unit = "%"
+
+[[param]]
+key = "soft"
+label = "Soft"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

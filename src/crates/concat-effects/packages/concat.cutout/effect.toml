@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.cutout"
+name = "Cutout"
+kind = "filter"
+category = "Stylised"
+order = 73
+intensity = "tone"
+description = "Paper cutout: flat, bold, graphic — colour cut with scissors and stuck on the page."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[[param]]
+key = "paper"
+label = "Paper"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

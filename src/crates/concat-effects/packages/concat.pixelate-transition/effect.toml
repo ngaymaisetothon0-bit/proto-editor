@@ -1,0 +1,14 @@
+format = 2
+
+[effect]
+id = "concat.pixelate-transition"
+name = "Pixelate"
+kind = "transition"
+category = "Dissolve"
+order = 3
+description = "The picture breaks into blocks that flip to the incoming shot one after another, scattered so no straight edge sweeps across."
+
+[transition]
+entry = "effect.wgsl"
+xfade = "pixelize"
+fallback = "cross-fade"

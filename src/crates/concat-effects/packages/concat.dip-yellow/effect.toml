@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.dip-yellow"
+name = "Dip to Yellow"
+kind = "transition"
+category = "Basic"
+order = 21
+description = "The cut dips through yellow, like a bright flash of sun."
+
+[[param]]
+key = "strength"
+label = "Strength"
+min = 0
+max = 100
+default = 80
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

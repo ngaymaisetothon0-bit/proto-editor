@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.pearl-dissolve"
+name = "Pearl Dissolve"
+kind = "transition"
+category = "Dissolve"
+order = 31
+description = "Pearl flakes wash across the frame, the new shot underneath."
+
+[[param]]
+key = "size"
+label = "Size"
+min = 0
+max = 100
+default = 50
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

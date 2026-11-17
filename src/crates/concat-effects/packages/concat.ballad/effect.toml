@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.ballad"
+name = "Ballad"
+kind = "filter"
+category = "Cinematic"
+order = 74
+intensity = "tone"
+description = "A ballad on the big screen: warm light, deep shadows, a song told in pictures."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[[param]]
+key = "song"
+label = "Song"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

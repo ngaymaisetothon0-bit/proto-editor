@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.barrel-roll"
+name = "Barrel Roll"
+kind = "transition"
+category = "Spin"
+order = 13
+description = "The whole frame rolls a full turn as the new shot lands."
+
+[[param]]
+key = "shade"
+label = "Shade"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

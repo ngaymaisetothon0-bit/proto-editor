@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.dip-lime"
+name = "Dip to Lime"
+kind = "transition"
+category = "Basic"
+order = 16
+description = "The cut dips through lime, like a bright flash of green."
+
+[[param]]
+key = "strength"
+label = "Strength"
+min = 0
+max = 100
+default = 80
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

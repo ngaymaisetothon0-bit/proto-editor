@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.spin-zoom"
+name = "Spin Zoom"
+kind = "transition"
+category = "Spin"
+order = 8
+description = "The frame spins a quarter turn and rushes in as the shots cross-fade."
+
+[[param]]
+key = "strength"
+label = "Strength"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

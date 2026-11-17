@@ -1,0 +1,39 @@
+struct Params { duration: f32 }
+
+// Standard easeOutBounce: a sequence of parabolas peaking at 0.75,
+// 0.9375, 0.984375 and 1.0, so it stays in [0, 1] and reaches exactly
+// 1.0 at x = 1 - the title settles at its rest position, never past it.
+fn ease_out_bounce(x: f32) -> f32 {
+    let n1 = 7.5625;
+    let d1 = 2.75;
+    if (x < 1.0 / d1) {
+        return n1 * x * x;
+    } else if (x < 2.0 / d1) {
+        return n1 * (x - 1.5 / d1) * (x - 1.5 / d1) + 0.75;
+    } else if (x < 2.5 / d1) {
+        return n1 * (x - 2.25 / d1) * (x - 2.25 / d1) + 0.9375;
+    } else {
+        return n1 * (x - 2.625 / d1) * (x - 2.625 / d1) + 0.984375;
+    }
+}
+// The whole title bounces into place, growing from 60% in a series of smaller bounces, while sharpening out of a soft blur over the first half-second.
+fn effect(uv: vec2<f32>) -> vec4<f32> {
+    let p = clamp(frame.clip_time / max(params.duration, 0.001), 0.0, 1.0);
+    let scale = 0.6 + 0.4 * ease_out_bounce(p);
+    let coord = vec2<f32>(0.5) + (uv - vec2<f32>(0.5)) / scale;
+    if (coord.x < 0.0 || coord.x > 1.0 || coord.y < 0.0 || coord.y > 1.0) {
+        return vec4<f32>(0.0);
+    }
+    // The same 3x3 box blur text-blur-in uses: at full progress the
+    // radius is 0, so all nine taps read the same pixel and the
+    // picture is exactly sharp.
+    let r = texel() * (1.0 - p) * 8.0;
+    var sum = vec4<f32>(0.0);
+    for (var y: i32 = -1; y <= 1; y++) {
+        for (var x: i32 = -1; x <= 1; x++) {
+            sum += sample(coord + vec2<f32>(f32(x), f32(y)) * r);
+        }
+    }
+    let c = sum / 9.0;
+    return vec4<f32>(c.rgb * p, c.a * p);
+}

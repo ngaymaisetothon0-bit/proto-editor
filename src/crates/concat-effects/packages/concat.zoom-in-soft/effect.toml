@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.zoom-in-soft"
+name = "Zoom In Soft"
+kind = "effect"
+category = "Motion"
+order = 3
+description = "The clip starts a little larger and settles to rest in the first half-second, a gentle push-in."
+
+[[param]]
+key = "duration"
+label = "Duration"
+min = 0.1
+max = 2
+default = 0.5
+step = 0.1
+unit = "s"
+
+[wgsl]
+entry = "effect.wgsl"

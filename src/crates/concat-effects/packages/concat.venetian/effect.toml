@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.venetian"
+name = "Venetian"
+kind = "transition"
+category = "Wipe"
+order = 22
+description = "Vertical blinds open one slat at a time, the next shot peeking through."
+
+[[param]]
+key = "slats"
+label = "Slats"
+min = 0
+max = 100
+default = 50
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

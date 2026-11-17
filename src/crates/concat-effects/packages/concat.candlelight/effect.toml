@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.candlelight"
+name = "Candlelight"
+kind = "filter"
+category = "Light"
+order = 77
+intensity = "tone"
+description = "Candlelight in a dark room: warm gold, soft shadows, quiet and close."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 65
+step = 1
+unit = "%"
+
+[[param]]
+key = "flame"
+label = "Flame"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

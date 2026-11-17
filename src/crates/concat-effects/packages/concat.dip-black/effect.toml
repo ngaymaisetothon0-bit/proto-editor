@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.dip-black"
+name = "Dip to Black"
+kind = "transition"
+category = "Basic"
+order = 8
+description = "The cut dips through black, like a blink in a dark room."
+
+[[param]]
+key = "strength"
+label = "Strength"
+min = 0
+max = 100
+default = 80
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

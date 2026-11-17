@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.slide-blur-out"
+name = "Slide Blur Out"
+kind = "effect"
+category = "Motion"
+order = 171
+description = "The clip slides out through a blur, softening as it fades over its last half-second."
+
+[[param]]
+key = "duration"
+label = "Duration"
+min = 0.1
+max = 2.0
+default = 0.5
+step = 0.1
+unit = "s"
+
+[wgsl]
+entry = "effect.wgsl"

@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.zoom-twirl"
+name = "Zoom Twirl"
+kind = "transition"
+category = "Zoom"
+order = 39
+description = "The camera zooms and twirls into the new shot."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

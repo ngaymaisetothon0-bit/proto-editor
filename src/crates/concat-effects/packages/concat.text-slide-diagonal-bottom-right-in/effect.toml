@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.text-slide-diagonal-bottom-right-in"
+name = "Text Slide Diagonal Bottom Right In"
+kind = "effect"
+category = "Motion"
+order = 110
+description = "The whole title slides into place from the bottom right and fades in over the first half-second."
+
+[[param]]
+key = "duration"
+label = "Duration"
+min = 0.1
+max = 2.0
+default = 0.5
+step = 0.1
+unit = "s"
+
+[wgsl]
+entry = "effect.wgsl"

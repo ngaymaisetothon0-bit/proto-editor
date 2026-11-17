@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.square"
+name = "Square"
+kind = "filter"
+category = "Everyday"
+order = 42
+intensity = "tone"
+description = "A town square in the afternoon: plain, warm, busy — an ordinary good day."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 65
+step = 1
+unit = "%"
+
+[[param]]
+key = "afternoon"
+label = "Afternoon"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

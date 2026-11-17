@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.sonnet"
+name = "Sonnet"
+kind = "filter"
+category = "Cinematic"
+order = 77
+intensity = "tone"
+description = "A sonnet on the big screen: warm light, deep shadows, fourteen lines of light."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[[param]]
+key = "lines"
+label = "Lines"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

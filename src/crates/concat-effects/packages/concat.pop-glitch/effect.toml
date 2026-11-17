@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.pop-glitch"
+name = "Pop Glitch"
+kind = "transition"
+category = "Glitch"
+order = 36
+description = "Pops shift and glitch as the new shot takes over."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

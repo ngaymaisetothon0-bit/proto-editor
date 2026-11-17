@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.indigo"
+name = "Indigo"
+kind = "filter"
+category = "Color"
+order = 41
+intensity = "tone"
+description = "Deep indigo dye: rich blue-violet colour, dark and royal."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[[param]]
+key = "dye"
+label = "Dye"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

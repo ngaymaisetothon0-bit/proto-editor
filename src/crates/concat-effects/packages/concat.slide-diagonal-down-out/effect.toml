@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.slide-diagonal-down-out"
+name = "Slide Diagonal Down Out"
+kind = "transition"
+category = "Slide"
+order = 25
+description = "The old shot slides off diagonally down, the new one underneath."
+
+[[param]]
+key = "distance"
+label = "Distance"
+min = 50
+max = 150
+default = 100
+step = 5
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

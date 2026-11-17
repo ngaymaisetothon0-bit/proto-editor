@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.static-burst"
+name = "Static Burst"
+kind = "transition"
+category = "Glitch"
+order = 12
+description = "A burst of TV static crackles across the cut, then the new shot locks in."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

@@ -1,0 +1,75 @@
+format = 2
+
+[effect]
+id = "concat.karaoke-highlight"
+name = "Karaoke Highlight"
+kind = "effect"
+category = "Motion"
+order = 270
+description = "For a title clip: the word being spoken is tinted the highlight colour, and the important word stays tinted when one is named. With no words set, the picture passes through unchanged."
+
+[[param]]
+key = "words"
+label = "Words"
+min = 0.0
+max = 3.0
+default = 0.0
+step = 1.0
+unit = ""
+
+[[param]]
+key = "boundary1"
+label = "First boundary"
+min = 0.0
+max = 1.0
+default = 1.0
+step = 0.01
+unit = ""
+
+[[param]]
+key = "boundary2"
+label = "Second boundary"
+min = 0.0
+max = 1.0
+default = 1.0
+step = 0.01
+unit = ""
+
+[[param]]
+key = "highlight_r"
+label = "Highlight red"
+min = 0.0
+max = 1.0
+default = 1.0
+step = 0.01
+unit = ""
+
+[[param]]
+key = "highlight_g"
+label = "Highlight green"
+min = 0.0
+max = 1.0
+default = 0.84
+step = 0.01
+unit = ""
+
+[[param]]
+key = "highlight_b"
+label = "Highlight blue"
+min = 0.0
+max = 1.0
+default = 0.04
+step = 0.01
+unit = ""
+
+[[param]]
+key = "important"
+label = "Important word"
+min = -1.0
+max = 2.0
+default = -1.0
+step = 1.0
+unit = ""
+
+[wgsl]
+entry = "effect.wgsl"

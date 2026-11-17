@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.fly-in-down"
+name = "Fly In Down"
+kind = "effect"
+category = "Motion"
+order = 10
+description = "The clip drops into place from above, easing to a stop, in the first half-second."
+
+[[param]]
+key = "duration"
+label = "Duration"
+min = 0.1
+max = 2
+default = 0.5
+step = 0.1
+unit = "s"
+
+[wgsl]
+entry = "effect.wgsl"

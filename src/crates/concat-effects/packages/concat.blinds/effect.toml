@@ -1,0 +1,14 @@
+format = 2
+
+[effect]
+id = "concat.blinds"
+name = "Blinds"
+kind = "transition"
+category = "Wipe"
+order = 13
+description = "Horizontal slats open one after another, top to bottom, to reveal the incoming shot."
+
+[transition]
+entry = "effect.wgsl"
+xfade = "hlslice"
+fallback = "cross-fade"

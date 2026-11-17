@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.graphite"
+name = "Graphite"
+kind = "filter"
+category = "Black & White"
+order = 78
+intensity = "tone"
+description = "Hard graphite black and white: crushed blacks, strong contrast, sharp edges."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 75
+step = 1
+unit = "%"
+
+[[param]]
+key = "depth"
+label = "Depth"
+min = 0
+max = 100
+default = 50
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

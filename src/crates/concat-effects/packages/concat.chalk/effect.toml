@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.chalk"
+name = "Chalk"
+kind = "filter"
+category = "Black & White"
+order = 92
+intensity = "tone"
+description = "Chalk on a blackboard: black and white, soft and dusty, like a school drawing."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[[param]]
+key = "dust"
+label = "Dust"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

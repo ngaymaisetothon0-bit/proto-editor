@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.sunrise"
+name = "Sunrise"
+kind = "filter"
+category = "Everyday"
+order = 22
+intensity = "tone"
+description = "First light of the morning: warm gold in the highlights, soft pink in the shadows, the day just starting."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[[param]]
+key = "warm"
+label = "Warm"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

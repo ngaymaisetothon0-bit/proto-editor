@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.scan-glitch"
+name = "Scan Glitch"
+kind = "transition"
+category = "Glitch"
+order = 10
+description = "A bright scan band sweeps down as the channels split apart at the cut."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

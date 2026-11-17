@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.slide-right-in"
+name = "Slide Right In"
+kind = "transition"
+category = "Slide"
+order = 30
+description = "The new shot slides in from the left, pushing the old one right."
+
+[[param]]
+key = "distance"
+label = "Distance"
+min = 50
+max = 150
+default = 100
+step = 5
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

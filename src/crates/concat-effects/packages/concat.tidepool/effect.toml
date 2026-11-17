@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.tidepool"
+name = "Tidepool"
+kind = "filter"
+category = "Scenery"
+order = 84
+intensity = "tone"
+description = "A tidepool at low tide: green-blue water, wet rock, life in miniature."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[[param]]
+key = "pool"
+label = "Pool"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

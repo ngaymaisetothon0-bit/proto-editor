@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.slide-from-corner"
+name = "Slide From Corner"
+kind = "transition"
+category = "Slide"
+order = 31
+description = "The new shot slides in from the top-right corner."
+
+[[param]]
+key = "distance"
+label = "Distance"
+min = 50
+max = 150
+default = 100
+step = 5
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

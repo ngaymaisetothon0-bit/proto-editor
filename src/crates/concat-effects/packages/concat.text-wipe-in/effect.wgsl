@@ -1,0 +1,12 @@
+struct Params { duration: f32 }
+
+// The whole title wipes into view from left to right over the first half-second.
+fn effect(uv: vec2<f32>) -> vec4<f32> {
+    let p = clamp(frame.clip_time / max(params.duration, 0.001), 0.0, 1.0);
+    // The edge sweeps past the far side (1.02 at p = 1) so that at the
+    // end the whole title is visible, soft band and all.
+    let edge = p * 1.04 - 0.02;
+    let vis = 1.0 - smoothstep(edge - 0.02, edge, uv.x);
+    let c = sample(uv);
+    return vec4<f32>(c.rgb * vis, c.a * vis);
+}

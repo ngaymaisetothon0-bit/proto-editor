@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.cobalt"
+name = "Cobalt"
+kind = "filter"
+category = "Color"
+order = 43
+intensity = "tone"
+description = "Cobalt blue pigment: deep, strong, a painter's blue."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[[param]]
+key = "pigment"
+label = "Pigment"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.sidewalk"
+name = "Sidewalk"
+kind = "filter"
+category = "Everyday"
+order = 26
+intensity = "tone"
+description = "An ordinary walk down the street: clear, honest, everyday light."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 65
+step = 1
+unit = "%"
+
+[[param]]
+key = "stroll"
+label = "Stroll"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

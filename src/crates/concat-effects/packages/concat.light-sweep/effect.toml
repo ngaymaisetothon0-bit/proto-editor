@@ -1,0 +1,13 @@
+format = 2
+
+[effect]
+id = "concat.light-sweep"
+name = "Light Sweep"
+kind = "transition"
+category = "Light"
+order = 15
+description = "A bright diagonal band sweeps across as the shots cross-fade, like a light passing over the cut."
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

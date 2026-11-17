@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.espresso"
+name = "Espresso"
+kind = "filter"
+category = "Food"
+order = 75
+intensity = "tone"
+description = "Cafe dark: warm brown midtones, deep contrast, food that looks roasted."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[[param]]
+key = "warmth"
+label = "Warmth"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

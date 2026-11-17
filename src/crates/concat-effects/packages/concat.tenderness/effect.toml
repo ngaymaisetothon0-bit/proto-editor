@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.tenderness"
+name = "Tenderness"
+kind = "filter"
+category = "Portrait"
+order = 89
+intensity = "tone"
+description = "Tenderness on a face: soft, warm, kind — love you can see."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 65
+step = 1
+unit = "%"
+
+[[param]]
+key = "warm"
+label = "Warm"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.daybreak"
+name = "Daybreak"
+kind = "filter"
+category = "Everyday"
+order = 25
+intensity = "tone"
+description = "First light of the morning: fresh, warm, clear — the day just beginning."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 65
+step = 1
+unit = "%"
+
+[[param]]
+key = "dawn"
+label = "Dawn"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

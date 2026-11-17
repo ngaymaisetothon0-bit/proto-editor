@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.fog"
+name = "Fog"
+kind = "filter"
+category = "Black & White"
+order = 79
+intensity = "tone"
+description = "Misty grey: low contrast, lifted blacks, the world seen through fog."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[[param]]
+key = "mist"
+label = "Mist"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

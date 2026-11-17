@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.chronicle"
+name = "Chronicle"
+kind = "filter"
+category = "Cinematic"
+order = 69
+intensity = "tone"
+description = "A chronicle on the big screen: warm light, deep shadows, history told in pictures."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[[param]]
+key = "history"
+label = "History"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

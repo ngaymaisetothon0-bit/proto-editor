@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.dip-gold"
+name = "Dip to Gold"
+kind = "transition"
+category = "Basic"
+order = 4
+description = "The cut dips through warm gold, like a flash of evening light."
+
+[[param]]
+key = "warmth"
+label = "Warmth"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.grow-in"
+name = "Grow In"
+kind = "effect"
+category = "Motion"
+order = 115
+description = "The clip grows in, rising from a speck to full size over the first half-second."
+
+[[param]]
+key = "duration"
+label = "Duration"
+min = 0.1
+max = 2.0
+default = 0.5
+step = 0.1
+unit = "s"
+
+[wgsl]
+entry = "effect.wgsl"

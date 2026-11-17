@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.eclipse"
+name = "Eclipse"
+kind = "filter"
+category = "Cinematic"
+order = 57
+intensity = "tone"
+description = "An eclipse: the light gone dark at the edges, colour muted, a ring of drama around the frame."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[[param]]
+key = "shadow"
+label = "Shadow"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

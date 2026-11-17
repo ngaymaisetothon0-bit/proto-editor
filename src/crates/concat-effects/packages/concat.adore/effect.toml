@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.adore"
+name = "Adore"
+kind = "filter"
+category = "Portrait"
+order = 93
+intensity = "tone"
+description = "Adore on a face: warm, soft, loving — a look you keep."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 65
+step = 1
+unit = "%"
+
+[[param]]
+key = "warm"
+label = "Warm"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

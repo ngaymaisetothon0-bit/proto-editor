@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.frost-dissolve"
+name = "Frost Dissolve"
+kind = "transition"
+category = "Dissolve"
+order = 13
+description = "The old shot frosts over and melts away flake by flake."
+
+[[param]]
+key = "size"
+label = "Size"
+min = 0
+max = 100
+default = 50
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

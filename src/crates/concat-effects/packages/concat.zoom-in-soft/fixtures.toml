@@ -1,0 +1,22 @@
+# A zoom about the centre leaves the middle pixel where it was, so at the
+# clip's first frame - 15% larger - it still reads the input colour.
+#
+# Colours in the working space: linear light, 1.0 the white of an SDR
+# picture.
+
+[[probe]]
+name = "default, centre unchanged at the first frame"
+input = [0.8, 0.5, 0.3, 1]
+expect = [0.8, 0.5, 0.3, 1]
+
+[[probe]]
+name = "shortest duration, centre still unchanged at the first frame"
+at = "min"
+input = [0.8, 0.5, 0.3, 1]
+expect = [0.8, 0.5, 0.3, 1]
+
+[[probe]]
+name = "longest duration, centre still unchanged at the first frame"
+at = "max"
+input = [0.8, 0.5, 0.3, 1]
+expect = [0.8, 0.5, 0.3, 1]

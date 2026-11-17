@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.copper"
+name = "Copper"
+kind = "filter"
+category = "Black & White"
+order = 102
+intensity = "tone"
+description = "Copper, warm and dark: black and white, soft and rich, like an old pot."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[[param]]
+key = "pot"
+label = "Pot"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

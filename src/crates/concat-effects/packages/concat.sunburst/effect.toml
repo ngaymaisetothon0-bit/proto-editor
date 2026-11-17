@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.sunburst"
+name = "Sunburst"
+kind = "transition"
+category = "Light"
+order = 19
+description = "Eight rays burst from the centre of the frame as the shots cross-fade."
+
+[[param]]
+key = "glow"
+label = "Glow"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

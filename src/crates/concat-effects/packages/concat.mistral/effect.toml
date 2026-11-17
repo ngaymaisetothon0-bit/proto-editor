@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.mistral"
+name = "Mistral"
+kind = "filter"
+category = "Cinematic"
+order = 58
+intensity = "tone"
+description = "A cold wind over the sea: cool, misty, muted — a cinematic hush."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[[param]]
+key = "mist"
+label = "Mist"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

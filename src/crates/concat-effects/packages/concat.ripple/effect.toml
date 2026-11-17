@@ -1,0 +1,13 @@
+format = 2
+
+[effect]
+id = "concat.ripple"
+name = "Ripple"
+kind = "transition"
+category = "Dissolve"
+order = 4
+description = "A ring spreads out from the centre, its wavy edge washing the incoming shot in."
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

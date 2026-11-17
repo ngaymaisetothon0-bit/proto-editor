@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.drift-spin-out"
+name = "Drift Spin Out"
+kind = "effect"
+category = "Motion"
+order = 183
+description = "The clip drifts out diagonally, turning half a turn as it fades over its last half-second."
+
+[[param]]
+key = "duration"
+label = "Duration"
+min = 0.1
+max = 2.0
+default = 0.5
+step = 0.1
+unit = "s"
+
+[wgsl]
+entry = "effect.wgsl"

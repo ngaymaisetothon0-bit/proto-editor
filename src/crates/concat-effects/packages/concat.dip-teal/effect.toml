@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.dip-teal"
+name = "Dip to Teal"
+kind = "transition"
+category = "Basic"
+order = 12
+description = "The cut dips through teal, like a deep sea flash."
+
+[[param]]
+key = "strength"
+label = "Strength"
+min = 0
+max = 100
+default = 80
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

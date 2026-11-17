@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.ember"
+name = "Ember"
+kind = "filter"
+category = "Cinematic"
+order = 41
+intensity = "tone"
+description = "Firelight on the picture: warm midtones and a little more colour, the highlights held."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 75
+step = 1
+unit = "%"
+
+[[param]]
+key = "contrast"
+label = "Contrast"
+min = 0
+max = 100
+default = 30
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.morning-light"
+name = "Morning Light"
+kind = "filter"
+category = "Light"
+order = 91
+intensity = "tone"
+description = "Morning light through the window: bright, warm, clear — a new day."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 65
+step = 1
+unit = "%"
+
+[[param]]
+key = "newday"
+label = "New Day"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.zinc"
+name = "Zinc"
+kind = "filter"
+category = "Black & White"
+order = 84
+intensity = "tone"
+description = "Cold zinc grey: black and white with a metallic edge, sharp and clean."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[[param]]
+key = "steel"
+label = "Steel"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

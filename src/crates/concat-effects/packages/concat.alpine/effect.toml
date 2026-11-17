@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.alpine"
+name = "Alpine"
+kind = "filter"
+category = "Scenery"
+order = 78
+intensity = "tone"
+description = "Mountain air: cool, crisp, the blues and greens lifted."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[[param]]
+key = "crisp"
+label = "Crisp"
+min = 0
+max = 100
+default = 50
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

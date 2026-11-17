@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.opal"
+name = "Opal"
+kind = "filter"
+category = "Color"
+order = 51
+intensity = "tone"
+description = "Opal stone: soft, cool, milky — a gem colour that changes with the light."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[[param]]
+key = "gem"
+label = "Gem"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

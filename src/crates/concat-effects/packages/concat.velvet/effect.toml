@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.velvet"
+name = "Velvet"
+kind = "filter"
+category = "Portrait"
+order = 76
+intensity = "tone"
+description = "Soft glamour portrait: warm skin, lifted blacks, gentle contrast."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 65
+step = 1
+unit = "%"
+
+[[param]]
+key = "soft"
+label = "Soft"
+min = 0
+max = 100
+default = 55
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

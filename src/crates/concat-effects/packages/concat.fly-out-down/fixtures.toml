@@ -1,0 +1,22 @@
+# A probe runs with no known clip end, so the exit never starts and the
+# middle pixel reads the input colour unchanged.
+#
+# Colours in the working space: linear light, 1.0 the white of an SDR
+# picture.
+
+[[probe]]
+name = "default, unchanged with no known end"
+input = [0.8, 0.5, 0.3, 1]
+expect = [0.8, 0.5, 0.3, 1]
+
+[[probe]]
+name = "shortest duration, still unchanged with no known end"
+at = "min"
+input = [0.8, 0.5, 0.3, 1]
+expect = [0.8, 0.5, 0.3, 1]
+
+[[probe]]
+name = "longest duration, still unchanged with no known end"
+at = "max"
+input = [0.8, 0.5, 0.3, 1]
+expect = [0.8, 0.5, 0.3, 1]

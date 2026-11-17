@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.diagonal-wipe"
+name = "Diagonal Wipe"
+kind = "transition"
+category = "Wipe"
+order = 23
+description = "A soft diagonal edge sweeps across with a shadow, the new shot following behind."
+
+[[param]]
+key = "soft"
+label = "Soft"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

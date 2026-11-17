@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.paper-tear"
+name = "Paper Tear"
+kind = "transition"
+category = "Wipe"
+order = 21
+description = "The outgoing shot tears away on a jagged edge, shadowed like torn paper."
+
+[[param]]
+key = "roughness"
+label = "Roughness"
+min = 0
+max = 100
+default = 50
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

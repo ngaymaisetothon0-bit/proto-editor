@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.elegy"
+name = "Elegy"
+kind = "filter"
+category = "Cinematic"
+order = 76
+intensity = "tone"
+description = "An elegy on the big screen: warm light, deep shadows, a song for what is gone."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[[param]]
+key = "memory"
+label = "Memory"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

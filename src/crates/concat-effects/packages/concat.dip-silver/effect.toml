@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.dip-silver"
+name = "Dip to Silver"
+kind = "transition"
+category = "Basic"
+order = 10
+description = "The cut dips through silver, like a flash of polished metal."
+
+[[param]]
+key = "strength"
+label = "Strength"
+min = 0
+max = 100
+default = 80
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

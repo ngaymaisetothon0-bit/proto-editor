@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.pinwheel"
+name = "Pinwheel"
+kind = "transition"
+category = "Spin"
+order = 11
+description = "The frame spins like a pinwheel around the centre, then settles on the new shot."
+
+[[param]]
+key = "spin"
+label = "Spin"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

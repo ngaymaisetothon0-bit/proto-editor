@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.slide-up"
+name = "Slide Up"
+kind = "transition"
+category = "Slide"
+order = 10
+description = "The new shot slides up from below, pushing the old one off the top."
+
+[[param]]
+key = "distance"
+label = "Distance"
+min = 50
+max = 150
+default = 100
+step = 5
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

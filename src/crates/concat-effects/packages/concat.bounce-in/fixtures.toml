@@ -1,0 +1,22 @@
+# At the clip's first frame the picture is small and centred, so the middle
+# pixel still shows the picture itself.
+#
+# Colours in the working space: linear light, 1.0 the white of an SDR
+# picture.
+
+[[probe]]
+name = "default, small and centred at the first frame"
+input = [0.8, 0.5, 0.3, 1]
+expect = [0.7998, 0.5, 0.30005, 1]
+
+[[probe]]
+name = "shortest duration, still small and centred at the first frame"
+at = "min"
+input = [0.8, 0.5, 0.3, 1]
+expect = [0.7998, 0.5, 0.30005, 1]
+
+[[probe]]
+name = "longest duration, still small and centred at the first frame"
+at = "max"
+input = [0.8, 0.5, 0.3, 1]
+expect = [0.7998, 0.5, 0.30005, 1]

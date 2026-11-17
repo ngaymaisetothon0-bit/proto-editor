@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.zoom-fade"
+name = "Zoom Fade"
+kind = "transition"
+category = "Zoom"
+order = 20
+description = "The camera zooms into the new shot, fading through the midpoint."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

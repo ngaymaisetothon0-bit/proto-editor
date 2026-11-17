@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.text-bounce-out"
+name = "Text Bounce Out"
+kind = "effect"
+category = "Motion"
+order = 121
+description = "The whole title bounces upward and away over its last half-second."
+
+[[param]]
+key = "duration"
+label = "Duration"
+min = 0.1
+max = 2.0
+default = 0.5
+step = 0.1
+unit = "s"
+
+[wgsl]
+entry = "effect.wgsl"

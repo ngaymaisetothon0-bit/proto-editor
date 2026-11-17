@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.dip-pink"
+name = "Dip to Pink"
+kind = "transition"
+category = "Basic"
+order = 18
+description = "The cut dips through pink, like a soft flash of colour."
+
+[[param]]
+key = "strength"
+label = "Strength"
+min = 0
+max = 100
+default = 80
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

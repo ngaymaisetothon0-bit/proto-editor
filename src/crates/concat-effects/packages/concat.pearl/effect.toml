@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.pearl"
+name = "Pearl"
+kind = "filter"
+category = "Portrait"
+order = 78
+intensity = "tone"
+description = "Pearl skin: bright, luminous, a cool white glow that softens everything."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 65
+step = 1
+unit = "%"
+
+[[param]]
+key = "glow"
+label = "Glow"
+min = 0
+max = 100
+default = 55
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

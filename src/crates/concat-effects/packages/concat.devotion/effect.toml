@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.devotion"
+name = "Devotion"
+kind = "filter"
+category = "Portrait"
+order = 94
+intensity = "tone"
+description = "Devotion on a face: warm, soft, true — love that stays."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 65
+step = 1
+unit = "%"
+
+[[param]]
+key = "warm"
+label = "Warm"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

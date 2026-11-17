@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.marble"
+name = "Marble"
+kind = "filter"
+category = "Black & White"
+order = 90
+intensity = "tone"
+description = "Marble, white and grey stone: black and white, smooth and cool, like a statue."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[[param]]
+key = "stone"
+label = "Stone"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

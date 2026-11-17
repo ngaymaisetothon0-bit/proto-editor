@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.pencil"
+name = "Pencil"
+kind = "filter"
+category = "Black & White"
+order = 83
+intensity = "tone"
+description = "A pencil sketch: black and white, soft grey, crisp lines — drawn by hand."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[[param]]
+key = "sketch"
+label = "Sketch"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

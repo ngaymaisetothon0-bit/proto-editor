@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.word-blur-melt-out"
+name = "Word Blur Melt Out"
+kind = "effect"
+category = "Motion"
+order = 428
+description = "Each word melts away, sagging down as it blurs away, last word first, over its last half-second."
+
+[[param]]
+key = "duration"
+label = "Duration"
+min = 0.1
+max = 3.0
+default = 0.5
+step = 0.1
+unit = "s"
+
+[wgsl]
+entry = "effect.wgsl"

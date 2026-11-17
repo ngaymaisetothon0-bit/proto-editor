@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.drive-in"
+name = "Drive-In"
+kind = "filter"
+category = "Film"
+order = 83
+intensity = "tone"
+description = "A drive-in movie night: warm, a little faded, pure nostalgia."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[[param]]
+key = "nostalgia"
+label = "Nostalgia"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

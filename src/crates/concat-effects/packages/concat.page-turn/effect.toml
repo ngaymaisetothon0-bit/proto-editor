@@ -1,0 +1,13 @@
+format = 2
+
+[effect]
+id = "concat.page-turn"
+name = "Page Turn"
+kind = "transition"
+category = "Wipe"
+order = 20
+description = "A page turns over the cut: the outgoing shot peels away on a diagonal, its curl shadowed, the next shot underneath."
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

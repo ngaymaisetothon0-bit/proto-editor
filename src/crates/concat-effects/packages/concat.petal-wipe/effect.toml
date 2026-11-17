@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.petal-wipe"
+name = "Petal Wipe"
+kind = "transition"
+category = "Wipe"
+order = 46
+description = "A petal edge expands from the centre as the new shot takes over."
+
+[[param]]
+key = "soft"
+label = "Soft"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

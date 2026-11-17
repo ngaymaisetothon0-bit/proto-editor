@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.bokeh-dissolve"
+name = "Bokeh Dissolve"
+kind = "transition"
+category = "Dissolve"
+order = 7
+description = "A dreamy dissolve: the picture blooms soft and bright at the middle of the cut."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

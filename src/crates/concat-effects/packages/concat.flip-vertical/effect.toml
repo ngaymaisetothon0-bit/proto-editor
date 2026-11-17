@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.flip-vertical"
+name = "Flip Vertical"
+kind = "transition"
+category = "Spin"
+order = 12
+description = "The frame flips like a card around its horizontal axis, shaded at the turn."
+
+[[param]]
+key = "shade"
+label = "Shade"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

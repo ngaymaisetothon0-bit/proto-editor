@@ -1,0 +1,13 @@
+format = 2
+
+[effect]
+id = "concat.slide-zoom"
+name = "Slide Zoom"
+kind = "transition"
+category = "Slide"
+order = 7
+description = "The outgoing shot slides away and shrinks while the incoming one slides in and grows to full size."
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

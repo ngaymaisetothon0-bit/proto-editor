@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.glowworm"
+name = "Glowworm"
+kind = "filter"
+category = "Light"
+order = 78
+intensity = "tone"
+description = "Glowworms in the dark: tiny green lights, soft and strange, floating in the night."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 65
+step = 1
+unit = "%"
+
+[[param]]
+key = "glow"
+label = "Glow"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

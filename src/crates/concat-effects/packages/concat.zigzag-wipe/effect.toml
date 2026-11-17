@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.zigzag-wipe"
+name = "Zigzag Wipe"
+kind = "transition"
+category = "Wipe"
+order = 24
+description = "A diagonal edge with a zigzag bite sweeps across the cut."
+
+[[param]]
+key = "soft"
+label = "Soft"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

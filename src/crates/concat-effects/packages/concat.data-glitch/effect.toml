@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.data-glitch"
+name = "Data Glitch"
+kind = "transition"
+category = "Glitch"
+order = 24
+description = "Data moshing shifts and glitches as the new shot takes over."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

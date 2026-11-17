@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.text-slide-diagonal-top-right-out"
+name = "Text Slide Diagonal Top Right Out"
+kind = "effect"
+category = "Motion"
+order = 101
+description = "The whole title slides away to the top right and fades out over its last half-second."
+
+[[param]]
+key = "duration"
+label = "Duration"
+min = 0.1
+max = 2.0
+default = 0.5
+step = 0.1
+unit = "s"
+
+[wgsl]
+entry = "effect.wgsl"

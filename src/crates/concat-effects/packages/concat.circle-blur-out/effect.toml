@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.circle-blur-out"
+name = "Circle Blur Out"
+kind = "effect"
+category = "Motion"
+order = 172
+description = "The clip closes in a circle through a blur, softening as it fades over its last half-second."
+
+[[param]]
+key = "duration"
+label = "Duration"
+min = 0.1
+max = 2.0
+default = 0.5
+step = 0.1
+unit = "s"
+
+[wgsl]
+entry = "effect.wgsl"

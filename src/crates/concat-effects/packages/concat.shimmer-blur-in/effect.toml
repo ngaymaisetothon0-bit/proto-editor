@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.shimmer-blur-in"
+name = "Shimmer Blur In"
+kind = "effect"
+category = "Motion"
+order = 194
+description = "The clip shimmers in through a blur, its brightness rippling as it sharpens over the first half-second."
+
+[[param]]
+key = "duration"
+label = "Duration"
+min = 0.1
+max = 2.0
+default = 0.5
+step = 0.1
+unit = "s"
+
+[wgsl]
+entry = "effect.wgsl"

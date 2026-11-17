@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.slide-diagonal-in"
+name = "Slide Diagonal In"
+kind = "transition"
+category = "Slide"
+order = 24
+description = "The new shot slides in diagonally from the top-left."
+
+[[param]]
+key = "distance"
+label = "Distance"
+min = 50
+max = 150
+default = 100
+step = 5
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

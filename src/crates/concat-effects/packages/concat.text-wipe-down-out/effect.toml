@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.text-wipe-down-out"
+name = "Text Wipe Down Out"
+kind = "effect"
+category = "Motion"
+order = 125
+description = "The whole title wipes away from top to bottom over its last half-second."
+
+[[param]]
+key = "duration"
+label = "Duration"
+min = 0.1
+max = 2.0
+default = 0.5
+step = 0.1
+unit = "s"
+
+[wgsl]
+entry = "effect.wgsl"

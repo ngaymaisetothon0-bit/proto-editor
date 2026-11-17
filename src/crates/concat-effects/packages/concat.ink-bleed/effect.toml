@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.ink-bleed"
+name = "Ink Bleed"
+kind = "transition"
+category = "Dissolve"
+order = 8
+description = "The next shot bleeds in like ink on paper, the spreading edge dark before it turns."
+
+[[param]]
+key = "softness"
+label = "Softness"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.kodachrome"
+name = "Kodachrome"
+kind = "filter"
+category = "Film"
+order = 73
+intensity = "tone"
+description = "Slide film: warm reds, deep yellows, a toe that never quite clips."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 75
+step = 1
+unit = "%"
+
+[[param]]
+key = "contrast"
+label = "Contrast"
+min = 0
+max = 100
+default = 30
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

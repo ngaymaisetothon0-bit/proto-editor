@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.blueprint"
+name = "Blueprint"
+kind = "filter"
+category = "Stylised"
+order = 57
+intensity = "tone"
+description = "Cyanotype blue: the picture redrawn as a blueprint, deep blue shadows over pale blue-white highlights."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 85
+step = 1
+unit = "%"
+
+[[param]]
+key = "contrast"
+label = "Contrast"
+min = 0
+max = 100
+default = 30
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

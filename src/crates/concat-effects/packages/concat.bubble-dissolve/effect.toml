@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.bubble-dissolve"
+name = "Bubble Dissolve"
+kind = "transition"
+category = "Dissolve"
+order = 15
+description = "Round bubbles pop across the frame, the new shot underneath."
+
+[[param]]
+key = "size"
+label = "Size"
+min = 0
+max = 100
+default = 50
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

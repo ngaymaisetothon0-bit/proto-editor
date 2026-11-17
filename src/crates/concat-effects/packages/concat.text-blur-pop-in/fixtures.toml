@@ -1,0 +1,21 @@
+# At the clip's first frame the pop has not started, so the middle pixel is fully transparent.
+#
+# Colours in the working space: linear light, 1.0 the white of an SDR
+# picture.
+
+[[probe]]
+name = "default"
+input = [0.8, 0.5, 0.3, 1]
+expect = [0, 0, 0, 0]
+
+[[probe]]
+name = "shortest duration"
+at = "min"
+input = [0.8, 0.5, 0.3, 1]
+expect = [0, 0, 0, 0]
+
+[[probe]]
+name = "longest duration"
+at = "max"
+input = [0.8, 0.5, 0.3, 1]
+expect = [0, 0, 0, 0]

@@ -1,0 +1,13 @@
+format = 2
+
+[effect]
+id = "concat.barn-door"
+name = "Barn Door"
+kind = "transition"
+category = "Wipe"
+order = 19
+description = "Two doors slide apart from the centre, left and right, to reveal the incoming shot."
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

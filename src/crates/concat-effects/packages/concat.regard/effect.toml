@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.regard"
+name = "Regard"
+kind = "filter"
+category = "Portrait"
+order = 85
+intensity = "tone"
+description = "A kind regard: warm, clear, gentle — the face that listens."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 65
+step = 1
+unit = "%"
+
+[[param]]
+key = "warm"
+label = "Warm"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

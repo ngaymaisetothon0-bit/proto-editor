@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.word-blur-overshoot-in"
+name = "Word Blur Overshoot In"
+kind = "effect"
+category = "Motion"
+order = 224
+description = "Each word overshoots in from 60%, past full size once, while sharpening out of a soft blur, one after another."
+
+[[param]]
+key = "duration"
+label = "Duration"
+min = 0.1
+max = 3.0
+default = 1.0
+step = 0.1
+unit = "s"
+
+[wgsl]
+entry = "effect.wgsl"

@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.starlight"
+name = "Starlight"
+kind = "transition"
+category = "Light"
+order = 24
+description = "Twinkling stars flare across the cut like a night sky."
+
+[[param]]
+key = "glow"
+label = "Glow"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

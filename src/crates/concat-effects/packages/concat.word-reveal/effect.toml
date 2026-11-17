@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.word-reveal"
+name = "Word Reveal"
+kind = "effect"
+category = "Motion"
+order = 12
+description = "The title appears one word at a time, in reading order, over the first second."
+
+[[param]]
+key = "duration"
+label = "Duration"
+min = 0.1
+max = 3.0
+default = 1.0
+step = 0.1
+unit = "s"
+
+[wgsl]
+entry = "effect.wgsl"

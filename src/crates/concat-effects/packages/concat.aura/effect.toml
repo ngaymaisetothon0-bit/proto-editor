@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.aura"
+name = "Aura"
+kind = "filter"
+category = "Light"
+order = 87
+intensity = "tone"
+description = "An aura of light: soft, warm, glowing — light that surrounds gently."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 65
+step = 1
+unit = "%"
+
+[[param]]
+key = "glow"
+label = "Glow"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

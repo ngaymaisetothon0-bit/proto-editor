@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.pop-art"
+name = "Pop Art"
+kind = "filter"
+category = "Stylised"
+order = 72
+intensity = "tone"
+description = "Bold pop art: punchy saturated colour, hard contrast, print-shop energy."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 75
+step = 1
+unit = "%"
+
+[[param]]
+key = "punch"
+label = "Punch"
+min = 0
+max = 100
+default = 65
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.sand-dissolve"
+name = "Sand Dissolve"
+kind = "transition"
+category = "Dissolve"
+order = 11
+description = "The old shot blows away grain by grain, like sand in the wind."
+
+[[param]]
+key = "size"
+label = "Size"
+min = 0
+max = 100
+default = 50
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.text-overshoot-in"
+name = "Text Overshoot In"
+kind = "effect"
+category = "Motion"
+order = 150
+description = "The whole title grows in from 60%, overshoots full size once, and settles over the first half-second."
+
+[[param]]
+key = "duration"
+label = "Duration"
+min = 0.1
+max = 2.0
+default = 0.5
+step = 0.1
+unit = "s"
+
+[wgsl]
+entry = "effect.wgsl"

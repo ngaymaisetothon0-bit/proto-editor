@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.dolly-zoom"
+name = "Dolly Zoom"
+kind = "transition"
+category = "Zoom"
+order = 17
+description = "The frame zooms in a vertigo pulse as the new shot takes over."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.dip-white"
+name = "Dip to White"
+kind = "transition"
+category = "Basic"
+order = 6
+description = "The cut dips through clean white, like a camera flash."
+
+[[param]]
+key = "strength"
+label = "Strength"
+min = 0
+max = 100
+default = 80
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

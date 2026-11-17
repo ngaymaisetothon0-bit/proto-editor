@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.charm"
+name = "Charm"
+kind = "filter"
+category = "Portrait"
+order = 90
+intensity = "tone"
+description = "Charm on a face: warm, bright, easy — a smile you remember."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 65
+step = 1
+unit = "%"
+
+[[param]]
+key = "warm"
+label = "Warm"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

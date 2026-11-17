@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.coral"
+name = "Coral"
+kind = "filter"
+category = "Color"
+order = 37
+intensity = "tone"
+description = "Warm coral colour: pink-orange life in the midtones, the picture glowing like a reef at noon."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[[param]]
+key = "reef"
+label = "Reef"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

@@ -1,0 +1,23 @@
+# A zoom about the centre leaves the middle pixel where it was, and a
+# probe runs with no known clip end, so the exit never starts: the middle
+# pixel reads the input colour unchanged.
+#
+# Colours in the working space: linear light, 1.0 the white of an SDR
+# picture.
+
+[[probe]]
+name = "default, centre unchanged with no known end"
+input = [0.8, 0.5, 0.3, 1]
+expect = [0.8, 0.5, 0.3, 1]
+
+[[probe]]
+name = "shortest duration, centre still unchanged with no known end"
+at = "min"
+input = [0.8, 0.5, 0.3, 1]
+expect = [0.8, 0.5, 0.3, 1]
+
+[[probe]]
+name = "longest duration, centre still unchanged with no known end"
+at = "max"
+input = [0.8, 0.5, 0.3, 1]
+expect = [0.8, 0.5, 0.3, 1]

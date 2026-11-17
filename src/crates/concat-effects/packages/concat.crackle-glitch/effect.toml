@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.crackle-glitch"
+name = "Crackle Glitch"
+kind = "transition"
+category = "Glitch"
+order = 35
+description = "Crackles shift and glitch as the new shot takes over."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

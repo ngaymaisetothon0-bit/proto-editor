@@ -1,0 +1,32 @@
+struct Params { duration: f32 }
+
+// Standard easeOutBounce: a sequence of parabolas peaking at 0.75,
+// 0.9375, 0.984375 and 1.0, so it stays in [0, 1] and reaches exactly
+// 1.0 at x = 1 - the title settles at its rest size, never past it.
+fn ease_out_bounce(x: f32) -> f32 {
+    let n1 = 7.5625;
+    let d1 = 2.75;
+    if (x < 1.0 / d1) {
+        return n1 * x * x;
+    } else if (x < 2.0 / d1) {
+        return n1 * (x - 1.5 / d1) * (x - 1.5 / d1) + 0.75;
+    } else if (x < 2.5 / d1) {
+        return n1 * (x - 2.25 / d1) * (x - 2.25 / d1) + 0.9375;
+    } else {
+        return n1 * (x - 2.625 / d1) * (x - 2.625 / d1) + 0.984375;
+    }
+}
+// The whole title springs away, shrinking to 60% with a bounce over its last half-second.
+fn effect(uv: vec2<f32>) -> vec4<f32> {
+    let remain = select(1e9, frame.clip_duration - frame.clip_time, frame.clip_duration > 0.0);
+    let t = clamp(remain / max(params.duration, 0.001), 0.0, 1.0);
+    // At rest (t = 1) the bounce term is 0, so the scale is exactly
+    // 1.0 and the title sits at its rest size.
+    let scale = 1.0 - 0.4 * ease_out_bounce(1.0 - t);
+    let coord = vec2<f32>(0.5) + (uv - vec2<f32>(0.5)) / scale;
+    if (coord.x < 0.0 || coord.x > 1.0 || coord.y < 0.0 || coord.y > 1.0) {
+        return vec4<f32>(0.0);
+    }
+    let c = sample(coord);
+    return vec4<f32>(c.rgb * t, c.a * t);
+}

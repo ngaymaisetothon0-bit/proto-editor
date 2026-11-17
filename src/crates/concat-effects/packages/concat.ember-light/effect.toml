@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.ember-light"
+name = "Ember Light"
+kind = "filter"
+category = "Light"
+order = 92
+intensity = "tone"
+description = "Ember light in the dark: small, warm, red — the last fire of the day."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 65
+step = 1
+unit = "%"
+
+[[param]]
+key = "lastfire"
+label = "Last Fire"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

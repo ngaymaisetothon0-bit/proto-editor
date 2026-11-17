@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.duotone"
+name = "Duotone"
+kind = "filter"
+category = "Stylised"
+order = 68
+intensity = "tone"
+description = "Two inks instead of a picture: teal in the shadows, warm cream in the highlights."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 80
+step = 1
+unit = "%"
+
+[[param]]
+key = "contrast"
+label = "Contrast"
+min = 0
+max = 100
+default = 25
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

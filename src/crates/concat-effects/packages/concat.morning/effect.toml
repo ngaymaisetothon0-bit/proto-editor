@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.morning"
+name = "Morning"
+kind = "filter"
+category = "Everyday"
+order = 29
+intensity = "tone"
+description = "Early morning light: bright, fresh, a little golden — a new day starting."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 65
+step = 1
+unit = "%"
+
+[[param]]
+key = "dawn"
+label = "Dawn"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.word-elastic-out"
+name = "Word Elastic Out"
+kind = "effect"
+category = "Motion"
+order = 201
+description = "Each word wobbles elastically away, shrinking to 60% with a rubber-band overshoot, last word first, over its last half-second."
+
+[[param]]
+key = "duration"
+label = "Duration"
+min = 0.1
+max = 3.0
+default = 0.5
+step = 0.1
+unit = "s"
+
+[wgsl]
+entry = "effect.wgsl"

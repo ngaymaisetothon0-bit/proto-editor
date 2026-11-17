@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.gaze"
+name = "Gaze"
+kind = "filter"
+category = "Portrait"
+order = 80
+intensity = "tone"
+description = "A steady gaze: warm, clear, close — the face lit gently, nothing hidden."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 65
+step = 1
+unit = "%"
+
+[[param]]
+key = "warm"
+label = "Warm"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.dip-peach"
+name = "Dip to Peach"
+kind = "transition"
+category = "Basic"
+order = 24
+description = "The cut dips through peach, like a soft flash of warm fruit."
+
+[[param]]
+key = "strength"
+label = "Strength"
+min = 0
+max = 100
+default = 80
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

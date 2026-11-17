@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.pan-blur-out"
+name = "Pan Blur Out"
+kind = "effect"
+category = "Motion"
+order = 269
+description = "The clip pans out through a blur, sliding to the right as it softens over its last half-second."
+
+[[param]]
+key = "duration"
+label = "Duration"
+min = 0.1
+max = 2.0
+default = 0.5
+step = 0.1
+unit = "s"
+
+[wgsl]
+entry = "effect.wgsl"

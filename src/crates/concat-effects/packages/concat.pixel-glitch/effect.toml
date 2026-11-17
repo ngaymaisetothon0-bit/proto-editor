@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.pixel-glitch"
+name = "Pixel Glitch"
+kind = "transition"
+category = "Glitch"
+order = 20
+description = "The picture breaks into glitching blocks, then the new shot locks in."
+
+[[param]]
+key = "amount"
+label = "Amount"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

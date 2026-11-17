@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.dip-cyan"
+name = "Dip to Cyan"
+kind = "transition"
+category = "Basic"
+order = 19
+description = "The cut dips through cyan, like a cool flash of blue-green."
+
+[[param]]
+key = "strength"
+label = "Strength"
+min = 0
+max = 100
+default = 80
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

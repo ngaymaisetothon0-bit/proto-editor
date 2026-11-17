@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.fly-in-right"
+name = "Fly In Right"
+kind = "effect"
+category = "Motion"
+order = 9
+description = "The clip slides into place from the right, easing to a stop, in the first half-second."
+
+[[param]]
+key = "duration"
+label = "Duration"
+min = 0.1
+max = 2
+default = 0.5
+step = 0.1
+unit = "s"
+
+[wgsl]
+entry = "effect.wgsl"

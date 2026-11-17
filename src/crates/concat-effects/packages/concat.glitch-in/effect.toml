@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.glitch-in"
+name = "Glitch In"
+kind = "effect"
+category = "Motion"
+order = 60
+description = "The clip glitches in, its picture sliced into bands that jump sideways, then settles over the first half-second."
+
+[[param]]
+key = "duration"
+label = "Duration"
+min = 0.1
+max = 2.0
+default = 0.5
+step = 0.1
+unit = "s"
+
+[wgsl]
+entry = "effect.wgsl"

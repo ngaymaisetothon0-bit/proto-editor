@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.ramen"
+name = "Ramen"
+kind = "filter"
+category = "Food"
+order = 78
+intensity = "tone"
+description = "Steaming hot ramen: rich warm browns, soft highlights, straight off the stove."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[[param]]
+key = "steam"
+label = "Steam"
+min = 0
+max = 100
+default = 55
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

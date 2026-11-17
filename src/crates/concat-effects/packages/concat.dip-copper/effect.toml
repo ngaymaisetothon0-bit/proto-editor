@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.dip-copper"
+name = "Dip to Copper"
+kind = "transition"
+category = "Basic"
+order = 11
+description = "The cut dips through copper, like a warm metallic flash."
+
+[[param]]
+key = "strength"
+label = "Strength"
+min = 0
+max = 100
+default = 80
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

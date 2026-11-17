@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.flicker-blur-in"
+name = "Flicker Blur In"
+kind = "effect"
+category = "Motion"
+order = 246
+description = "The clip flickers in through a blur, blinking on and off as it sharpens over the first half-second."
+
+[[param]]
+key = "duration"
+label = "Duration"
+min = 0.1
+max = 2.0
+default = 0.5
+step = 0.1
+unit = "s"
+
+[wgsl]
+entry = "effect.wgsl"

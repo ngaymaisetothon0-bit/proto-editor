@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.solarize"
+name = "Solarize"
+kind = "filter"
+category = "Stylised"
+order = 71
+intensity = "tone"
+description = "The darkroom accident: tones above the threshold flip to their negative."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 80
+step = 1
+unit = "%"
+
+[[param]]
+key = "threshold"
+label = "Threshold"
+min = 0
+max = 100
+default = 50
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

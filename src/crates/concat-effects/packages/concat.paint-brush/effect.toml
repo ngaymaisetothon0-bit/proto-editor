@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.paint-brush"
+name = "Paint Brush"
+kind = "transition"
+category = "Dissolve"
+order = 6
+description = "The next shot is painted in, block by block, in a scattered brush-stroke order."
+
+[[param]]
+key = "size"
+label = "Brush Size"
+min = 0
+max = 100
+default = 50
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

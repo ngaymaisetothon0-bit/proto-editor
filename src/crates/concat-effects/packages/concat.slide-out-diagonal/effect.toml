@@ -1,0 +1,21 @@
+format = 2
+
+[effect]
+id = "concat.slide-out-diagonal"
+name = "Slide Out Diagonal"
+kind = "effect"
+category = "Motion"
+order = 117
+description = "The clip slides out diagonally, gliding away to a corner as it fades over its last half-second."
+
+[[param]]
+key = "duration"
+label = "Duration"
+min = 0.1
+max = 2.0
+default = 0.5
+step = 0.1
+unit = "s"
+
+[wgsl]
+entry = "effect.wgsl"

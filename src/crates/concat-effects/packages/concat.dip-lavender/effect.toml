@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.dip-lavender"
+name = "Dip to Lavender"
+kind = "transition"
+category = "Basic"
+order = 22
+description = "The cut dips through lavender, like a soft purple flash."
+
+[[param]]
+key = "strength"
+label = "Strength"
+min = 0
+max = 100
+default = 80
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

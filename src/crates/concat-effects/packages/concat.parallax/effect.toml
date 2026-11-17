@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.parallax"
+name = "Parallax"
+kind = "transition"
+category = "Slide"
+order = 8
+description = "The shots slide past each other at different speeds, like layers at different depths."
+
+[[param]]
+key = "depth"
+label = "Depth"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.portra"
+name = "Portra"
+kind = "filter"
+category = "Film"
+order = 80
+intensity = "tone"
+description = "Portra 400: warm, muted, soft ends - the film look for people."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 70
+step = 1
+unit = "%"
+
+[[param]]
+key = "warmth"
+label = "Warmth"
+min = 0
+max = 100
+default = 50
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"

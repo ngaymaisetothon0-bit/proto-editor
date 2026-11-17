@@ -1,0 +1,22 @@
+format = 2
+
+[effect]
+id = "concat.smoke-wipe"
+name = "Smoke Wipe"
+kind = "transition"
+category = "Dissolve"
+order = 9
+description = "The next shot drifts in through smoke, soft large clouds instead of hard blocks."
+
+[[param]]
+key = "softness"
+label = "Softness"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[transition]
+entry = "effect.wgsl"
+fallback = "cross-fade"

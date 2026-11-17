@@ -1,0 +1,32 @@
+format = 2
+
+[effect]
+id = "concat.lantern-glow"
+name = "Lantern Glow"
+kind = "filter"
+category = "Light"
+order = 84
+intensity = "tone"
+description = "A lantern glowing in the night: warm light, soft and steady, lighting the way."
+
+[[param]]
+key = "tone"
+label = "Tone"
+min = 0
+max = 100
+default = 65
+step = 1
+unit = "%"
+
+[[param]]
+key = "glow"
+label = "Glow"
+min = 0
+max = 100
+default = 60
+step = 1
+unit = "%"
+
+[wgsl]
+entry = "effect.wgsl"
+space = "display"
